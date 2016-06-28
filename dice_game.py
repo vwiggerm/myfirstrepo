@@ -72,38 +72,38 @@ def play(nrounds, ndice=2):
 		if player_capital == 0 or computer_capital == 0:
 			break
 
-	if computer_capital > player_capital:
-		winner = 'Machine'
-	else:
-		winner = 'You'
-	print winner, 'won!'
+	#if computer_capital > player_capital:
+	#	winner = 'Machine'
+	#else:
+	#	winner = 'You'
+	#print winner, 'won!'
 
 	################ EDIT 4 ################
 	# Remove the rows above!
-	# if computer_capital < player_capital:
-	# 	print 'You Win!'
+	if computer_capital < player_capital:
+	 	print 'You Win!'
 	
-	# elif computer_capital > player_capital:
-	# 	print 'Machine Wins!'
+	elif computer_capital > player_capital:
+	 	print 'Machine Wins!'
 
-	# else:
-	# 	print 'Tie!'
+	else:
+	 	print 'Tie!'
 
-	# ans = raw_input('Do you want a rematch (y/n): ')
-	# if ans == 'y':
-	# 	print "\n - Let's go again! - \n"
-	# 	main()
+	ans = raw_input('Do you want a rematch (y/n): ')
+	if ans == 'y':
+	 	print "\n - Let's go again! - \n"
+	 	main()
 	########################################
 
 
 def main():
 	################ EDIT 1 ################
-	# welcome_banner()
+	welcome_banner()
 	########################################
 
 	################ EDIT 2 ################
-	# nrounds = int(raw_input('How many rounds shall we play: '))
-	# play(nrounds)
+	nrounds = int(raw_input('How many rounds shall we play: '))
+	play(nrounds)
 	########################################
 
 	play(2) 
